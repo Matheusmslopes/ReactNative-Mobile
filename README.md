@@ -24,7 +24,9 @@ Após esse comando, irá abrir uma nova página(VS CODE), contendo os arquivos d
 
 **npm run web**
 
-Continua...
+Aqui dará um erro, mas o próprio terminal mostrará o comando para corrigir:
+
+continua...
 
 
 
