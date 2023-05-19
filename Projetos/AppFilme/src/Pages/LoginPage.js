@@ -12,8 +12,10 @@ export default function LoginPage(){
             <Image style = {styles.img} source = {{uri: 'https://i.pinimg.com/736x/fa/b0/f4/fab0f4c853e2305018eb07e5e3034341.jpg'}}/>
             <Text style = {styles.txt}>Alguma coisa Aqui?</Text>
             <Login/>
-            <Link to= {{screen: "Página de registro"}} style = {styles.link}>Entrar</Link>
-            <Link to= {{screen: "Página de registro"}} style = {styles.link}>Registre-se!</Link>
+            <View style = {styles.LoginBox}>
+                <Link to= {{screen: "Página de filmes"}} style = {styles.link}>Entrar</Link>
+                <Link to= {{screen: "Página de registro"}} style = {styles.link}>Registre-se!</Link>
+            </View>
            
         </View>
     )
@@ -39,14 +41,22 @@ const styles = StyleSheet.create({
         marginTop: 15
     },
 
+    LoginBox: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: 10,
+    },
+
     link: {
         backgroundColor: "#088C7F",
         color: '#F2CB05',
         width: 160,
         height: 40,
         borderRadius: 20,
-        textAlign: 'center',
-        justifyContent: 'center',
-        marginBottom: 10
+        alignItems: 'center',
+        marginBottom: 10,
+        /*paddingVertical: 12,
+        paddingHorizontal: 32,*/
+        textAlign: 'center'
     },
 })
