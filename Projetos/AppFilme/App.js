@@ -1,7 +1,8 @@
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
-import RegisterPage from './src/pages/RegisterPage';
-import LoginPage from './src/pages/LoginPage';
+import RegisterPage from './src/Pages/RegisterPage';
+import LoginPage from './src/Pages/LoginPage';
+import FilmePage from './src/Pages/FilmePage';
 
 const Stack =  createStackNavigator();
 
@@ -9,8 +10,9 @@ export default function App() {
     return(
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name = "LoginPage" component={LoginPage}/>
-          <Stack.Screen name = "RegisterPage" component={RegisterPage}/>
+          <Stack.Screen name = "Página de login" component={LoginPage}/>
+          <Stack.Screen name = "Página de registro" component={RegisterPage}/>
+          <Stack.Screen name = "Página de filmes" component={FilmePage}/>
         </Stack.Navigator>
       </NavigationContainer>
     );
